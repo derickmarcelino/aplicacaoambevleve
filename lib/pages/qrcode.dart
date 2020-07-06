@@ -78,19 +78,19 @@ class _QrCodeScanState extends State<QrCodeScan> {
           
         children:[
           
-          Text('\n Carrinho de Compras \n',
+          Text('\n Carrinho de Compras',
           style: new TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 30.0,
                   fontFamily: 'Roboto')),
                   
-              Expanded(child: Products(_products)),
+              Expanded(child: Products(_products),),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: <Widget>[
                 RaisedButton(
                   color: Colors.blue,
-                child: Text(' Capturar QR Code '),
+                child: Text(' Adicionar Produto'),
      
                 onPressed:_scanQR),
                 RaisedButton(
@@ -118,7 +118,7 @@ class _QrCodeScanState extends State<QrCodeScan> {
           context: context,
           builder: (context) => AlertDialog(
             title: Text("Desejar Encerrar sua Compra?"),
-            content: Text("A compra foi no total de RS 15,00"),
+            content: Text("\nO total da sua compra foi de RS 38,20"),
              actions: <Widget>[
           FlatButton(
             child: Text('Continuar Comprando'),
@@ -141,7 +141,7 @@ class _QrCodeScanState extends State<QrCodeScan> {
           context: context,
           builder: (context) => AlertDialog(
             title: Text("Compra Efetuada Com Sucesso"),
-            content: Text("Deseja Continuar Comprando"),
+            content: Text("Deseja Continuar Comprando?"),
              actions: <Widget>[
           FlatButton(
             child: Text('Continuar Comprando'),

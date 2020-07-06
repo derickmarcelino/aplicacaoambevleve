@@ -14,12 +14,13 @@ class QRCodeEntrada extends StatelessWidget {
 
 Widget incluiStack(BuildContext context) {
   return Stack(
-    
     children: <Widget>[
+   
+      
       Container(
       color: Colors.blue,
       alignment: Alignment.center,
-      child: Text("Para liberar seu acesso, aproxime o QR Code da catraca",
+      child: Text("\nPara liberar sua entrada,\nAproxime o QR Code da catraca",
       style: new TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 20.0,

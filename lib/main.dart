@@ -35,7 +35,7 @@ class MyApp extends StatelessWidget {
         '/qrcodescan' : (BuildContext context) => new QrCodeScan(text: null),
         '/sairloja' : (BuildContext context) => new QRCodeSaida(),
         '/entrarloja' : (BuildContext context) => new QRCodeEntrada(),
-        
+        '/nav-drawer' : (BuildContext context) => new NavDrawer(),
     },
  
       theme: ThemeData(
@@ -110,7 +110,7 @@ class _MyHomePageState extends State<MyHomePage> {
      // appBar: AppBar(
       //),
       body: Container(
-        
+        color: Colors.white,
         child: 
         Column(
           
@@ -128,8 +128,8 @@ class _MyHomePageState extends State<MyHomePage> {
                   fontFamily: 'Roboto')), 
             ),
             Image.asset('assets/flutter-icon.png',
-            width: 200,
-            height: 200,),
+            width: 250,
+            height: 250,),
         
               ],
               
@@ -158,7 +158,7 @@ class _MyHomePageState extends State<MyHomePage> {
           ],
            ),
         
-           //
+           
       ),
     );
     
@@ -172,7 +172,7 @@ textFormFieldLogin() {
            style: TextStyle(color: Colors.black),
            decoration: InputDecoration( 
              labelText: "Email",
-             labelStyle: TextStyle(fontSize:20.0, color: Colors.black),
+             labelStyle: TextStyle(fontSize:25.0, color: Colors.black),
              hintText: "Informe o email"
             )
          );
@@ -187,7 +187,7 @@ textFormFieldSenha() {
            style: TextStyle(color: Colors.black),
             decoration: InputDecoration( 
              labelText: "Senha",
-             labelStyle: TextStyle(fontSize:20.0, color: Colors.black),
+             labelStyle: TextStyle(fontSize:25.0, color: Colors.black),
              hintText: "Informe a senha"
             )
          );

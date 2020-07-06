@@ -50,7 +50,11 @@ flutter:
   assets:
   - assets/fzgwYzq.png
   - assets/flutter-icon.png
+  - assets/user.png
   - assets/skol-pilsen.png
+  - assets/brahma-pilsen.png
+  - assets/colorado-bertho.png
+  - assets/Fusion-LimaoHortela.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

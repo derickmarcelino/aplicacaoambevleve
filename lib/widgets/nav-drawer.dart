@@ -8,15 +8,19 @@ class NavDrawer extends StatelessWidget {
         padding: EdgeInsets.zero,
         children: <Widget>[
           DrawerHeader(
-            child: Text(
-              'AmbevLeve',
-              style: TextStyle(color: Colors.white, fontSize: 25),
+            child: 
+            Text(
+              'Ambev Leve',
+              style: TextStyle(color: Colors.white, fontSize: 30), 
             ),
+            
             decoration: BoxDecoration(
                 color: Colors.blueGrey,
                 image: DecorationImage(
-                    image: AssetImage('assets/images/fzgwYzq.png'))),
+                    image: AssetImage('assets/user.png'),alignment: Alignment.bottomLeft),),
+                    
           ),
+          
           ListTile(
             leading: Icon(Icons.code),
             title: Text('Entrar na Loja'),

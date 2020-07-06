@@ -22,7 +22,7 @@ Widget incluiStack(BuildContext context) {
       Container(
       color: Colors.blue,
       alignment: Alignment.center,
-       child: Text("Para liberar seu acesso, aproxime o QR Code da catraca",
+       child: Text("\nPara liberar sua saida,\nAproxime o QR Code da catraca",
       style: new TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 20.0,
@@ -31,7 +31,7 @@ Widget incluiStack(BuildContext context) {
 
      GestureDetector(
         onTap: () {
-          Navigator.pushNamed(context, '/qrcodescan'); 
+          Navigator.pushNamed(context, '/nav-drawer'); 
           _showAlert(context);},
       child: Image.network(
 'https://lh3.googleusercontent.com/ufwUy4SGVTqCs8fcp6Ajxfpae0bNImN1Rq2cXUjWI7jlmNMCsXgQE5C3yUEzBu5Gadkz=s180-rw',
